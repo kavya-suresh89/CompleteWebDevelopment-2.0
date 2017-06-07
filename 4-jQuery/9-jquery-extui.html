@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    
+    <head>
+        
+        <title>jQuery-ExtUI</title>
+    
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        
+        <!-- this link is for the external jqueryUI javascript-->
+        
+        <script src="js/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.js"></script>
+        
+        
+        <!--this link is for external  jqueryUI style.css -->    
+	   <link href="js/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" />
+        
+        <style type="text/css">
+        
+            #resizable, #also {
+                
+                width: 150px;
+                height: 150px;
+                padding: 0.5em;
+            
+            }
+            
+            #resizable h3, #also h3 { 
+                
+                text-align: center; 
+                margin: 0;
+            
+            }
+            
+            #also {
+                
+                margin-top: 10px;
+                
+            }
+        
+        </style>
+        
+        
+        
+    </head>
+    
+    <body>
+        
+        <div id="draggable" class="ui-widget-content">
+            <p>Drag me around</p>
+        </div>
+        
+        <div style="width: 400px; height: 300px; background-color: yellow">
+        
+            <span>I'm stuck in the box!</span>
+            
+        </div>
+        
+        <div id="resizable" class="ui-widget-content">
+            
+            <h3 class="ui-widget-header">Resizable</h3>
+            
+        </div>
+        
+        <!-- to re-size two div elements together -->
+        
+        <div id="also" class="ui-widget-content">
+        
+            <h3 class="ui-widget-header">This is also re-sizable</h3>
+        
+        </div>
+    
+        <script type="text/javascript">
+            
+            $( function() {
+                
+                $( "#draggable" ).draggable( {axis: "y"} );
+                
+                $("span").draggable( {containment: "parent"});
+                
+                $( "#resizable" ).resizable( {
+                    alsoResize : "#also",
+                    resize: function( event, ui ) {
+                        
+                       if( $("#resizable").width() > 300) {
+                           
+                           alert("big enough!!");
+                       }
+                        
+                    }
+                });
+                
+                $("#also").resizable( {
+                    grid : 50
+                });
+ 
+            } );
+        
+        </script>
+        
+    </body>
+    
+</html>    

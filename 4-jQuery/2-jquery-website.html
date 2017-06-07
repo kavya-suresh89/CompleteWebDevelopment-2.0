@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    
+    <head>
+    
+        <title>jQuery-changing website</title>
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+    
+    </head>
+    
+    <style type="text/css">
+    
+        #circle {
+            
+            width : 150px;
+            height : 150px;
+            background-color: green;
+            border-radius: 50%;
+            
+        }
+    
+    </style>
+
+    <body>
+        
+        <div id="circle"></div>
+        
+        <iframe src="http://www.bbc.com/news/world/asia/india"></iframe>
+    
+       <!-- <p id="text">This is some text!</p>-->
+        
+        <script type="text/javascript">
+        
+           /* $("#circle").click(function() {
+               
+                $("p").html("This text has changed!");
+                
+               // document.getElementById("text").innerHTML = "Hey there!";
+                
+            });
+            
+            $("#circle").hover(function() {
+                
+                $("#text").html("This text changed because of hover");
+                
+            });*/
+            
+            
+             $("#circle").hover(function() {
+                 
+                 $("iframe").attr("src", "https://www.ecowebhosting.co.uk");
+                 
+             });
+            
+        
+            
+        
+        </script>
+    
+    </body>
+
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My style web page</title>
+        
+        <style type="text/css">
+            .red {
+                color : red;
+            }
+            .large {
+                font-size: 200%;
+            } 
+            
+            #green {
+                color : green;
+            }
+            
+            .underlined {
+                text-decoration: underline;
+            }
+            
+            #first-section {
+                color: darkblue;
+                background-color: #CEF6CE;
+                width : 250px;
+                height: 100%;
+                float : left;
+            }
+            
+            #second-section {
+                background-color: #CEEBF6;
+                width : 250px;
+                height: 100%;
+                float : right;
+            }
+            
+            .clear-float {
+                clear: both;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="first-section">
+            <h1>CSS is Cool !</h1>
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links.</p>
+        </div>
+        
+        <div id="second-section">
+            
+            <p class="red large">This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links.</p>
+        
+            <!--<p id="green">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>-->
+        
+            <p class="large">This is internal CSS using <span class="red underlined">classes and id's</span></p>
+            
+        </div>
+        
+        <div class="clear-float">
+            <p>This paragraph is not floated!</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+    <head>
+    
+        <title>jQuery-sortables</title>
+        
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        
+        <!-- this link is for the external jqueryUI javascript-->
+        
+        <script src="js/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.js"></script>
+        
+        
+        <!--this link is for external  jqueryUI style.css -->    
+	   <link href="js/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" />
+        
+       <style>
+           
+           #sortable {
+               
+               list-style-type: none;
+               margin: 0;
+               padding: 0;
+               width: 60%;
+           
+           }
+ 
+           #sortable li { 
+               
+               margin: 0 3px 3px 3px; 
+               padding: 0.4em; 
+               padding-left: 1.5em; 
+               font-size: 1.4em; 
+               height: 18px; 
+           
+           }
+           
+           #sortable li span { 
+               
+               position: absolute;
+               margin-left: -1.3em;
+           
+           }
+        </style>
+    
+    </head>
+    
+    <body>
+        
+        <ul id="sortable">
+            
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Apples</li>
+
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Bananas</li>
+
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Chicken</li>
+
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Egg</li>
+
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Bread</li>
+
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Chips</li>
+
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Salad</li>
+
+        </ul>
+    
+    
+        <script type="text/javascript">
+        
+             $( "#sortable" ).sortable();
+             $( "#sortable" ).disableSelection();
+        
+        </script>
+    
+    </body>
+
+</html>

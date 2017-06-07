@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    
+    <head>
+    
+        <title>Javascript</title>
+    
+    </head>
+    
+    <body>
+        
+        <p>How many fingers are you holding up?</p>
+        
+        <p>
+        
+            <select id="myNumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            
+            <button id="guess">Guess!</button>
+        
+        </p>
+        
+        <p id="displayResult"></p>
+    
+        <script type="text/javascript">
+            
+             var myNumber = document.getElementById("myNumber").value;
+            
+            function doAGuess(correctAnswer) {
+                
+                 var guess = Math.random();
+
+                    guess = guess * 6;
+
+                    guess = Math.floor(guess);
+
+                    if(guess == myNumber) {
+                        
+                        return (true);
+                        
+                        
+                    }
+                    
+                    else {
+                        
+                        return (false);
+                    }
+                
+            }
+            
+            
+            document.getElementById("guess").onclick = function() {
+                
+                var myNumber = document.getElementById("myNumber").value;
+                
+                var gotIt = false;
+                
+                var numberOfGuesses = 1;
+                
+                while(gotIt == false) {
+                
+                    
+                    if(doAGuess(myNumber) == true) {
+                        
+                        gotIt = true;
+                         document.getElementById("displayResult").innerHTML = "I got the number " + myNumber + " in " + numberOfGuesses +" number of guesses";
+
+                    }
+                    
+                    else {
+                        
+                        numberOfGuesses++;
+                    }
+                    
+                }
+                
+            }
+            
+          /* function average(a , b) {
+               
+               return (a + b) / 2;
+               
+           }
+            
+            var x = 5;
+            
+            var y = 10;
+            
+            alert (average(x, y)); */
+            
+        
+        </script>
+    
+    </body>
+
+</html>

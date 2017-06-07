@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+    <head>
+        
+        <title>jQuery</title>   
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        
+        <style type="text/css">
+        
+            #text {
+                
+                display: block;
+            }
+        
+        </style>
+    
+    </head>
+    
+    <body>
+        
+        <p id="text">This is some text!</p>
+        
+        <button id="toggle">Toogle text</button>
+        
+       <!-- <button id="fade">Fade Out Text</button> 
+        
+        <p id="hidden_text">This text was hidden!</p>
+        
+        <button id="fadeIn">Fade In Text</button> -->
+    
+        <script type="text/javascript">
+            
+            $("#toggle").click(function() {
+                 
+                if($("#text").css("display") == "none"){
+                    
+                    $("#text").fadeIn();
+                    
+                }
+                
+                else{
+                    
+                    $("#text").fadeOut();
+                    
+                }
+                
+            });
+            
+          /*  $("#fade").click(function() {
+                
+                $("#text").fadeOut();
+                
+            });
+            
+            
+            $("#fadeIn").click(function() {
+                
+                $("#hidden_text").fadeIn();
+                
+            });*/
+            
+        </script>
+    
+    </body>
+    
+</html>    

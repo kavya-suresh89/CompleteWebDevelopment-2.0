@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    
+    <head>
+        
+        <title>jQuery-Regex</title>
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+         
+    </head>
+    
+    <body>
+        
+        <p id="result_regex"></p>
+    
+        <script type="text/javascript">
+            
+            //contains a string is between two words
+        
+            //var regex = /is/;
+            
+            
+            var string = "Regex is grEaT !";
+            
+            
+            //does not return true or false ; returns the word it was supposed to match; if the results don't match it does not return anything; regex is also case-sensitive
+           // var result = string.match(regex);
+            
+            //for case-insensitive search use i
+            var regex = /Great/i;
+            
+            //for number of occurances of a word or letter use g-global expression
+            
+            var reg_ex = /e/g;
+            
+            var result = string.match(reg_ex);
+            
+            
+            document.getElementById("result_regex").innerHTML = result;
+        
+        </script>
+    
+    </body>
+    
+</html>

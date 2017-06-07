@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    
+    <head>
+    
+        <title>Javascript</title>
+        
+    </head>
+    
+    <body>
+    
+        <div id = "displayTweet"></div>
+    
+        <script type="text/javascript">
+            
+            var tweets = ["Hi everyone!" , "I love breakfast" , "Night Night :)"];
+            
+            var tweetString = "";
+        
+            for(var i = 0; i < tweets.length; i++){
+                
+               tweetString = tweetString + "<p>" + tweets[i] + "</p>" ;
+                
+            }
+        
+            document.getElementById("displayTweet").innerHTML = tweetString;
+        </script>
+    
+    </body>
+
+</html>

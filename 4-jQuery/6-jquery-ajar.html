@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    
+    <head>
+    
+        <title>jQuery-Ajax</title>
+        
+         <script src="js/jquery-3.2.1.min.js"></script>
+        
+    </head>
+    
+    <body>
+    
+        <script type="text/javascript">
+        
+            $.ajax("info.txt").done(function(data) {
+                
+                alert(data);
+                
+            }).fail(function() {
+                
+                alert("could not get data");
+                
+            });
+        
+        </script>
+    
+    </body>
+
+</html>
