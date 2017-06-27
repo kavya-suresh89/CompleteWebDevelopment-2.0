@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>HTML5 and CSS3</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        
+        
+        <style>
+        
+            #multi-column {
+                
+                column-count: 3;
+                column-gap: 40px;
+                column-rule-style: dotted;
+                column-rule-width: thin;
+                column-rule-color: blue;
+                margin-top: 400px;
+                
+            }
+            
+            h2 {
+                
+                column-span: all;
+            }
+            
+            header {
+                width: 100%;
+                height: 50px;
+                background-color: grey;
+            }
+            
+            body{
+                
+                margin: 0;
+                
+            }
+            
+            #container {
+                
+                width: 100%;
+                background-color: yellow;
+                height: calc(400px - 50px);
+                position: absolute;
+            }
+            
+            .flexbox-container {
+                
+                display: flex;
+                width: 500px;
+                height: 250px;
+                background-color: red;
+                flex-direction: column; /* row ; row-reverse, column-reverse */
+                /*flex-wrap: wrap; /* for floating items*/
+                
+                
+            }
+            
+            .flexbox-item {
+                
+                background-color: aqua;
+                width: 100px;
+                height: 50px;
+                margin: 10px;
+            }
+        
+        </style>
+        
+        
+  
+        
+    </head>
+    
+    <body>
+        
+        
+        <header></header>
+            
+        <div id="container">
+        
+            <div class="flexbox-container">
+                
+                <div class="flexbox-item">Item - 1</div>
+                <div class="flexbox-item" style="border:5px solid grey; padding:10px">Item - 2</div>
+                <div class="flexbox-item">Item - 3</div>
+            
+            </div>
+        
+        </div>
+        
+        <div id="multi-column">
+            
+            <h2>News for Nerds</h2>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            
+            <br/><br/>
+            
+            Etiam dolor lacus, hendrerit ut leo ac, sagittis euismod ante. Nam ligula sem, dapibus ut elit malesuada, imperdiet ultrices quam. Nam viverra, neque at facilisis placerat, nisi erat iaculis ex, quis finibus justo dolor eu purus. Curabitur dictum metus a eleifend cursus. Suspendisse iaculis accumsan felis, eu auctor libero tempus nec. Nulla ultrices fermentum est ut fermentum. Nulla mi nulla, malesuada non mauris sed, accumsan efficitur urna. Mauris eget pulvinar nibh, in pulvinar justo. Suspendisse fringilla venenatis diam ut rutrum. Nunc efficitur nulla vitae elit congue luctus.
+            
+            <br/><br/>
+
+            Praesent mattis leo quis neque efficitur elementum. Aliquam erat volutpat. Aenean dolor lacus, facilisis in imperdiet et, interdum sed nisl. Sed sed interdum lectus. Cras mauris dui, tincidunt non luctus quis, pretium in orci. Cras at elementum nisi. Suspendisse potenti. In quis justo tortor. Nam nec cursus est, sit amet finibus tortor. Nulla nibh quam, facilisis euismod vehicula eget, mollis vitae tellus. Pellentesque condimentum pharetra nisl, a sodales neque consectetur ac. Suspendisse in ante luctus lacus tempor iaculis vel eget turpis. Vestibulum ac nibh blandit, convallis est eget, facilisis massa. Donec porttitor placerat volutpat.
+            
+            <br/>
+        
+        
+        
+        </div>
+       
+    </body>
+</html>    

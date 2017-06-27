@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>HTML5 and CSS3</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        
+        
+        <style>
+        
+            #box {
+                
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border-radius: 10px;
+                transition: 1s linear;
+                font-style: "arial";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 200%;
+                
+                /* liner ; ease-in-out; ease-in are the other options in which the speed can be controlled */
+                
+                
+            }
+            
+            #box:hover {
+                
+                /* transform moves upto  50px left, 50px down in a diagonal manner */
+                /*transform: translate(50px, 50px);*/
+                
+                /*transform: rotate(40deg);
+                
+                also works with rotateX(), rotateY() and rotateZ()*/
+                
+                /*transform: scale(2,4);*/
+                
+                transform: skew(20deg, 30deg);
+                
+                
+                
+            }
+            
+        
+        </style>
+        
+    </head>
+    
+    <body>
+    
+        <div id="box">BOX</div>
+    </body>
+</html>    

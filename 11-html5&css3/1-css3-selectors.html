@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>HTML5 and CSS3</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        
+        
+        <style>
+        
+            h1{
+                
+                color: red;
+            }
+            
+            .green {
+                
+                color: greenyellow;
+                
+            }
+            
+            #blue {
+                
+                color: skyblue;
+                font-size: 25px;
+                
+            }
+            
+            div p {
+                
+                font-weight: bold;
+                font-size: 20px;
+            }
+            
+            /*and div element that has at least one h3 element and p element the styling will be applied to the p element. For the style to be applied to both h3 and p element use h3 + p */
+            
+            h3 ~ p {
+                
+                text-decoration: underline;
+            }
+            
+            a[target] {
+                
+                color: yellow;
+                font-size: 150%;
+            }
+            
+            
+            /*any link that contains the word google */
+            a[href*="google"]{
+                
+                text-decoration: none;
+            }
+            
+        
+        </style>
+        
+        
+        <!-- 
+
+            ^= ->  begins with
+            $= ->  ends with
+            ~= -> has the value between two spaces
+            |= -> has the value separated by hyphens (-)
+
+            -->
+        
+    </head>
+    
+    <body>
+    
+        <h1>I am a simple heading</h1>
+        
+        <div>
+            
+            <h3>I am a div h3 element</h3>
+        
+            <p class="green">I am a paragraph of few words</p>
+            
+            <p>I am inside a div!</p>
+
+            <a href="www.google.com"  target="_blank">I am a link to something</a>
+            
+        </div>
+        
+        
+        <div>
+            
+            <p>I'm in another divv!</p>
+            
+            <a href="www.google.com" id="blue">I am a link without a target</a>
+        
+        </div>
+        
+        
+        <p>I am outside a div!</p>
+        
+    </body>
+</html>    

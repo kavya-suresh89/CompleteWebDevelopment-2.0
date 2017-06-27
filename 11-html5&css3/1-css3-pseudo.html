@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>HTML5 and CSS3</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        
+        
+        <style>
+        
+            a:hover {
+                
+                text-decoration: none;
+            }
+            
+            input:focus{
+                
+                background-color: lightyellow;
+            }
+            
+            /*div elements in which the p tag is the first element */
+            p:first-child{
+                
+                color: brown;
+            }
+            
+            p:last-child{
+                
+                font-size: 200%;
+            }
+            
+            p:only-child {
+                
+                font-weight: bold;
+            }
+            
+            p:first-of-type {
+                
+                text-decoration: underline;
+                text-decoration-color: fuchsia;
+            }
+            
+            /*last-of-type and only-of-type */
+            
+            tr:nth-child(2n) {
+                
+                background-color: gainsboro;
+            }
+            
+            /* nth-last-child - count backwards;
+            nth-child(2n-1) - count 1, 3, 5 ; 
+            nth-child(2n) - count 2, 4, 6; 
+            nth-of-type - only count a certain type*/
+            
+            /* all para elements that do not have the class green  */
+            p:not(.green) {
+                
+                font-family: cursive;
+            }
+            
+            p:first-letter{
+                
+                font-style: italic;
+            }
+            
+            /* :first-line is also allowed   */
+            
+            a:after {
+                
+                content: "!!!! This link will navigate you to google!  ";
+                
+                /*content:" ("attr(href)")" */
+            }
+        
+        </style>
+ 
+    </head>
+    
+    <body>
+    
+        <h1>I am a simple heading</h1>
+        
+        <div>
+            
+            <h3>I am a div h3 element</h3>
+        
+            <p class="green">I am a paragraph of few words</p>
+            
+            
+
+            <a href="www.google.com"  target="_blank">I am a link to something</a>
+            
+            <p>I am inside a div!</p>
+            
+        </div>
+        
+        
+        <div>
+            <p>I'm in another divv!</p>
+            
+            <p><input type="text"></p>
+            
+            <a href="www.google.com" id="blue">I am a link without a target</a>
+        
+        </div>
+        
+        <!--this div is an example of first child, last child and also the only child -->
+        <div>
+        <p>I am outside a div div!</p>
+            
+        </div>
+        
+        
+        
+        <table>
+            
+            <tr>
+                
+                <td>col1</td>
+                <td>col2</td>
+            
+            </tr>
+            
+            <tr>
+                
+                <td>col3</td>
+                <td>col4</td>
+            
+            </tr>
+            
+            <tr>
+                
+                <td>col5</td>
+                <td>col6</td>
+            
+            </tr>
+            
+            <tr>
+                
+                <td>col6</td>
+                <td>col7</td>
+            
+            </tr>
+        
+        </table>
+    </body>
+</html>    

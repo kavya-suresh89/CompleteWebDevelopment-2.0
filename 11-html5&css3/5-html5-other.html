@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>HTML5 and CSS3</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        
+        <script>document.createElement("container")</script>
+        <style>
+        
+            article {
+                
+                color: greenyellow;
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <header>
+            
+            <h1>This is an HTML5 demo header</h1>
+        
+        </header>
+    
+        <article>
+        
+         I'm inside an article!
+        
+        </article>
+        
+        <container>
+            
+            I'm a container !
+        
+        </container>
+        
+        <figure>
+        
+            <img data-description ="Baby" id="baby" src="https://upload.wikimedia.org/wikipedia/en/9/9d/Maggie_Simpson.png" alt="Maggie Simpson"/>
+            
+            <figcaption>
+                
+            <p>Maggie Simpson <small>(Wiki)</small></p>
+        
+        </figcaption>
+            
+        </figure>
+        
+        <input type="range" min="0" max="100" step="10">
+        
+        <div contenteditable="true">
+            
+           <li>Buy milk</li>
+        
+        </div>
+        
+        <footer>
+
+            <p>i'm a foot note</p>
+        </footer>
+        
+        
+        <script>
+        
+            alert(document.getElementById("baby").getAttribute("data-description"));
+            
+        
+        </script>
+        
+    </body>
+</html>    
